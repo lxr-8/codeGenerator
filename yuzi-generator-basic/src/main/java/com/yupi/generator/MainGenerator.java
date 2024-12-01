@@ -23,7 +23,7 @@ public class MainGenerator {
         // 生成静态文件
         StaticGenerator.copyFilesByHutool(inputPath, outputPath);
         // 生成动态文件
-        String inputDynamicFilePath = projectPath + File.separator + "scr/main/resources/templates/MainTemplate.java.ftl";
+        String inputDynamicFilePath = projectPath + File.separator + "src/main/resources/templates/MainTemplate.java.ftl";
         String outputDynamicFilePath = outputPath + File.separator + "acm-template/src/com/yupi/acm/MainTemplate.java";
         DynamicGenerator.doGenerate(inputDynamicFilePath, outputDynamicFilePath, model);
     }
